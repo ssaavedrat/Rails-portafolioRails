@@ -1,29 +1,10 @@
-# README
+# Rails - Portafolio Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Repositorio de proyecto portafolio Rails. 
 
 ## Pasos
+
+A continuación, se detalla un paso a paso para la creación de este proyecto. 
 
 1. Creación de proyecto
     ```
@@ -115,7 +96,10 @@ Things you may want to cover:
 
 9. Agregar descripción a la card. Enlace a Github y LinkedIn. 
 
+## TODO
 
+* Upgrade para entregable de desafío evaluado
+* Integrar navbar como partial i.e. _navbar
 
 
 
