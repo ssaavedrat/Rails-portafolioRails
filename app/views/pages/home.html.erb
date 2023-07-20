@@ -1,2 +1,26 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1 class="text-center">Portafolio Rails</h1>
+<%# Agregamos una Card de Bootstrap%>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4 ">
+      <%# Helper image_tag%>
+      <%= image_tag 'me.jfif', class:"img-fluid rounded-circle p-3 mt-3 ms-1", alt:"Me"%>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Sobre mí</h5>
+        <p class="card-text">Soy una persona apasionada por la tecnología y la innovación. Mi formación como ingeniero civil eléctrico, mi experiencia en el desarrollo de soluciones telemáticas y mi diplomado en ciencia de datos me han permitido adquirir una base sólida en el mundo de la informática y la programación. 
+        </p>
+        <p class="card-text">Me considero un entusiasta del aprendizaje continuo y siempre estoy dispuesto a enfrentar nuevos desafíos para mejorar mis habilidades y conocimientos. Actualmente estoy cursando el bootcamp de desarrollo de Ruby on Rails.
+        </p>
+        <p class="card-text">
+        Mi objetivo es seguir creciendo en el campo de la tecnología y contribuir con mi creatividad y capacidad analítica en proyectos que impacten positivamente en la sociedad y el mundo empresarial. Con un enfoque en la resolución de problemas y la colaboración en equipo, estoy emocionado por la oportunidad de aportar mi experiencia y pasión a proyectos innovadores y desafiantes.
+        </p>
+        <div class="card-text text-center">
+            <a class="mx-2" href="https://www.linkedin.com/in/sergio-saavedra-torres-0b362062/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a class="mx-2" href="https://github.com/ssaavedrat/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github fa-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
