@@ -104,7 +104,10 @@ A continuación, se detalla un paso a paso para la creación de este proyecto.
 
 9. Agregar descripción a la card. Enlace a Github y LinkedIn.
 
-## TODO
+10. Agregar las vistas `projects` y `contact` e insertar HTML básico.
 
-* Upgrade para entregable de desafío evaluado
-* Integrar navbar como partial i.e. _navbar
+11. En la vista `projects.html.erb` se agregan 3 proyectos anteriores. Para ello, se agregan las imágenes de dichos proyectos a la carpeta `app/assets/images` y se referencian con el helper `image_tag`. Los proyectos son presentados con tres cards de bootstrap a las que se les ha agregado un botón de *ver más*, estilizado con css agregado al archivo `app/assets/stylesheets/estilos.css`.
+
+Extras:
+
+* Se usa el partial `_navbar`. Los partials permiten reutilizar elementos comunes y simplificar la lectura de los layouts.
