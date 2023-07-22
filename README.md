@@ -1,28 +1,33 @@
 # Rails - Portafolio Rails
 
-Repositorio de proyecto portafolio Rails. 
+Repositorio de proyecto portafolio Rails.
 
 ## Pasos
 
-A continuación, se detalla un paso a paso para la creación de este proyecto. 
+A continuación, se detalla un paso a paso para la creación de este proyecto.
 
 1. Creación de proyecto
-    ```
+
+    ```bash
     rails new portafolioRails
     ```
 
 2. Con el generador de rails, creamos un controlador **pages** para manejar las vistas del portafolio. Asignamos, además, una vista home
-    ```
+
+    ```bash
     rails g controller pages home
     ```
 
-3. Comprobamos el funcionamiento ejecutando el servidor 
-    ```
+3. Comprobamos el funcionamiento ejecutando el servidor
+
+    ```bash
     rails s
     ```
+
     y accediendo a `localhost:3000`
 
 4. Definimos **home** como la ruta raíz (`/`), configurando el archivo `config/routes.rb`.
+
     ```Ruby
     Rails.application.routes.draw do
         get 'pages/home'
@@ -30,9 +35,10 @@ A continuación, se detalla un paso a paso para la creación de este proyecto.
         root "pages#home"
     end
     ```
+
     Ahora podemos entrar a `localhost:3000` y comprobar que **home** es la vista predeterminada.
 
-5. Modificamos el archivo `app/views/layouts/application.html.erb` para importar bootstrap mediante CDN. Además envolvemos `yield` dentro de un `div.container`. 
+5. Modificamos el archivo `app/views/layouts/application.html.erb` para importar bootstrap mediante CDN. Además envolvemos `yield` dentro de un `div.container`.
 
     Con esto, al recargar la página, se verá con la tipografía y estilos predeterminados de Bootstrap.
 
@@ -63,10 +69,12 @@ A continuación, se detalla un paso a paso para la creación de este proyecto.
     ```
 
 7. Creamos un archivo CSS en `app/assets/stylesheets/estilos.css` que automaticamente es llamado por `app/assets/stylesheets/application.css`,
-    ```
+
+    ```css
     *= require_tree .
     *= require_self
     ```
+
      a su vez, llamado por `app/views/layouts/application.html.erb`
 
     ```erb
@@ -94,15 +102,9 @@ A continuación, se detalla un paso a paso para la creación de este proyecto.
     </div>
     ```
 
-9. Agregar descripción a la card. Enlace a Github y LinkedIn. 
+9. Agregar descripción a la card. Enlace a Github y LinkedIn.
 
 ## TODO
 
 * Upgrade para entregable de desafío evaluado
 * Integrar navbar como partial i.e. _navbar
-
-
-
-
-
-
